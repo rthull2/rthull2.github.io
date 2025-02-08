@@ -30,9 +30,17 @@
 	</script>
 
 
-		<script>localStorage.setItem('attila_theme', 'light');</script>
-		<style>.js-theme {display:none!important;}</style>
 
+			<style>
+				.theme-dark:root {
+				  --ghost-accent-color: #337aff;
+				}
+				@media (prefers-color-scheme: dark) {
+				  html:not(.theme-light):root {
+				    --ghost-accent-color: #337aff;
+				  }
+				}
+			</style>
 
 	<link rel="icon" href="https://robhulltech.com/content/images/size/w256h256/format/jpeg/2025/02/2024-04-16_rings-selfie_60x60-1.jpg" type="image/jpeg">
     <link rel="canonical" href="https://robhulltech.com/about/">
