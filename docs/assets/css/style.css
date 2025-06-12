@@ -1734,6 +1734,7 @@ textarea {
   font-size: 1.6em;
   line-height: 2rem;
   color: var(--color-content-secondary);
+  fill: var(--color-content-secondary);
   white-space: nowrap;
   text-overflow: ellipsis;
   text-decoration: none;
@@ -1762,6 +1763,7 @@ textarea {
 .nav-header li a:focus,
 .nav-header li a:hover {
   color: var(--color-content-main);
+  fill: var(--color-content-main);
 }
 @media only screen and (max-width: 640px) {
   .nav-header li a:focus,
@@ -1772,14 +1774,14 @@ textarea {
 .nav-header li:last-child {
   margin-right: 0;
 }
-@media only screen and (max-width: 640px) {
+/* @media only screen and (max-width: 640px) {
   .nav-meta {
     display: none !important;
   }
-}
+} */
 .nav-meta li {
   margin-right: 1rem;
-  fill: var(--color-content-lead);
+  /* fill: var(--color-content-lead); */
 }
 .nav-meta li a {
   font-size: 1.75em;
@@ -2617,4 +2619,28 @@ textarea {
 }
 .paged .extra-pagination .pagination-box {
   border-bottom: 1px solid var(--color-background-contrast);
+}
+.social-links {
+  flex-direction: row;
+  margin-top: 1.5em;
+}
+.social-links span {
+  display: none;
+}
+.social-links a,
+.social-links .icon-svg {
+  font-size: 1.5em !important;
+  width: 1em !important;
+  height: 1em !important;
+  line-height: 1em !important;
+  padding: 0.25em;
+}
+
+.social-links a {
+  fill: var(--color-content-secondary);
+}
+
+.social-links a:focus,
+.social-links a:hover {
+  fill: var(--color-content-main) !important;
 }
