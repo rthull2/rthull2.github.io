@@ -1689,6 +1689,7 @@ textarea {
     width: 100%;
     flex-direction: row !important;
     padding: 0;
+    justify-content: flex-start;
   }
 }
 .nav-header li {
@@ -1774,14 +1775,9 @@ textarea {
 .nav-header li:last-child {
   margin-right: 0;
 }
-/* @media only screen and (max-width: 640px) {
-  .nav-meta {
-    display: none !important;
-  }
-} */
+
 .nav-meta li {
   margin-right: 1rem;
-  /* fill: var(--color-content-lead); */
 }
 .nav-meta li a {
   font-size: 1.75em;
